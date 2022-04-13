@@ -53,6 +53,9 @@ Note down all the eth1, eth1.2, - eth1.100 for each active VLAN you care about d
 
 Either open up your config.json on the CloudKey or learn how to edit/make one here: https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration
 
+# BROKEN DO NOT USE BELOW
+
+## Need to find why this has fatal errors on the USG.
 Copy this template for each of your VLANs/interfaces above to the nat/rule section
 
 {
