@@ -1,0 +1,12 @@
+ {
+  "service": {
+    "mdns": {
+      "repeater": {
+        "interface": [
+          "eth1.10",
+          "eth1.20"
+        ]
+      }
+    }
+  }
+}
