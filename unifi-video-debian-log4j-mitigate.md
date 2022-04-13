@@ -14,11 +14,11 @@ JVM_OPTS="${JVM_EXTRA_OPTS} \
 
 3) Insert this new line...
 
-
+```
   JVM_EXTRA_OPTS="-Dlog4j2.formatMsgNoLookups=true ${JVM_EXTRA_OPTS}"
+```
 
-
-// NOT THIS LINE OR ANYTHING FURTHER, THE NEXT FEW LINES SHOULD EXIST ALREADY
+THE NEXT FEW LINES SHOULD EXIST ALREADY
 
 [ -e /dev/urandom ] && \
         JVM_EXTRA_OPTS="-Djava.security.egd=file:/dev/./urandom ${JVM_EXTRA_OPTS}"
