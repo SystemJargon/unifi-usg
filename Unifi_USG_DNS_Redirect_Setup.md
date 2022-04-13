@@ -156,7 +156,5 @@ Hit Settings on it
 
 Scroll down and find "Force Provision"
 
-Pray and Profit
-
-Great way to verify this is to: 'dig @1.1.1.1 test.points.local' where the address I'm looking up doesn't exist in a public space (just my local DNS)
+A great way to verify this is to: 'dig @1.1.1.1 test.points.local' where the address I'm looking up doesn't exist in a public space (just my local DNS)
 
