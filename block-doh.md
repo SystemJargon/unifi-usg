@@ -1,5 +1,6 @@
 # THIS IS BROKEN DO NOT USE THIS CODE - FEEL FREE TO FIX AND USE AT YOUR OWN DISCRETION
 
+---------
 
 # Unifi How-to block Public DNS (DoH) - DNS over HTTPS
 
@@ -65,5 +66,5 @@ Copy <source location of doh-group-iplist.txt> to /tmp/doh-group-iplist.txt on U
 Note: Source command for /tmp/ipgroup.sh may take time.
 
 
-
-## I AM NOT LIABLE FOR ANYTHING SUCH AS BUT NOT LIMITED TO MISUSE OR DAMAGE OR CONSEQUENTIAL LOSSES TO YOUR EQUIPMENT
+---------
+Disclaimer: I AM NOT LIABLE FOR ANYTHING SUCH AS BUT NOT LIMITED TO MISUSE OR DAMAGE OR CONSEQUENTIAL LOSSES TO YOUR EQUIPMENT
