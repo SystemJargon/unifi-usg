@@ -102,6 +102,7 @@ Some graphical explaination of this by someone else is available at https://www.
 }
 ```
 
+Copy this template for each of your VLANs/interfaces above to the nat/rule section, ensure a new rule number each time and it doesn't exist already!
 
 Validate the json using the tool of your choice
 
@@ -117,47 +118,5 @@ Scroll down and find "Force Provision"
 
 A great way to verify this is to: 'dig @1.1.1.1 test.points.local' where the address I'm looking up doesn't exist in a public space (just my local DNS)
 
-
-
-# BROKEN DO NOT USE BELOW 
-
-## Need to find why this has fatal errors on the USG.
-Copy this template for each of your VLANs/interfaces above to the nat/rule section
-
-```
-{
-  "nat": {
-"rule": {
-  "1": {
-"description": "Redirect DNS requests",
-"destination": {
-  "group": {
-"address-group": "!YOUR_GROUP_ID_FOR_DNS_SERVERS_HERE"
-  },
-  "port": "53"
-},
-"inbound-interface": "YOUR_UNIX_INTERFACE_HERE (eg: eth1or eth1.90)",
-"inside-address": {
-  "address": "YOUR_IP_FOR_DNS_SERVER_HERE (eg: 192.168.1.14)"
-},
-"log": "enable",
-"protocol": "tcp_udp",
-"type": "destination"
-  },
-  "5001": {
-"description": "Translate DNS to Internal",
-"destination": {
-  "address": "YOUR_IP_FOR_DNS_SERVER_HERE (eg: 192.168.1.14)",
-  "port": "53"
-},
-"log": "disable",
-"outbound-interface": "YOUR_UNIX_INTERFACE_HERE (eg: eth1 or eth1.90)",
-"protocol": "tcp_udp",
-"type": "masquerade"
-  }
-}
-  }
-}
-
-```
+----------------
 
