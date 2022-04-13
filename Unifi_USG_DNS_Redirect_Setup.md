@@ -27,6 +27,7 @@ Look for something that has the description field: "description": "customized-Al
 Write down/copy aside the key associated that (mine is: 5d50c3764fd01c0ad01a6938) This is the Group ID for your group
 
 Now you need your 'interfaces' - meaning all your vlans and such.
+----------------------  ----------- 
 
 The way to find out your interfaces is ssh into the gateway and issue: show interfaces Output is:
 
