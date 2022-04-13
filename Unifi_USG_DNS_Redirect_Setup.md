@@ -59,6 +59,7 @@ Either open up your config.json on the CloudKey or learn how to edit/make one he
 ## Need to find why this has fatal errors on the USG.
 Copy this template for each of your VLANs/interfaces above to the nat/rule section
 
+```
 {
   "nat": {
 "rule": {
@@ -92,6 +93,8 @@ Copy this template for each of your VLANs/interfaces above to the nat/rule secti
 }
   }
 }
+
+```
 
 Validate the json using the tool of your choice
 
