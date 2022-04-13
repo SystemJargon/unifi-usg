@@ -18,6 +18,8 @@ Other Versions of CloudKey/UDM, config.gateway.json may exist then in this locat
 
 # Some further reading 
 
+[Force Strict DNS - Block DoH DNS-Over-HTTP](https://github.com/lwsnz/force-strict-dns)
+
 https://help.ui.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration-Using-config-gateway-json
 
 https://help.ui.com/hc/en-us/articles/215458888-UniFi-How-to-further-customize-USG-configuration-with-config-gateway-json
