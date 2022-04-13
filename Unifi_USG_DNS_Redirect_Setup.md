@@ -102,7 +102,24 @@ Some graphical explaination of this by someone else is available at https://www.
 }
 ```
 
-# BROKEN DO NOT USE BELOW
+
+Validate the json using the tool of your choice
+
+Go back to Unifi Controller web app
+
+Go to the devices tab
+
+Select your USG
+
+Hit Settings on it
+
+Scroll down and find "Force Provision"
+
+A great way to verify this is to: 'dig @1.1.1.1 test.points.local' where the address I'm looking up doesn't exist in a public space (just my local DNS)
+
+
+
+# BROKEN DO NOT USE BELOW 
 
 ## Need to find why this has fatal errors on the USG.
 Copy this template for each of your VLANs/interfaces above to the nat/rule section
@@ -143,18 +160,4 @@ Copy this template for each of your VLANs/interfaces above to the nat/rule secti
 }
 
 ```
-
-Validate the json using the tool of your choice
-
-Go back to Unifi Controller web app
-
-Go to the devices tab
-
-Select your USG
-
-Hit Settings on it
-
-Scroll down and find "Force Provision"
-
-A great way to verify this is to: 'dig @1.1.1.1 test.points.local' where the address I'm looking up doesn't exist in a public space (just my local DNS)
 
