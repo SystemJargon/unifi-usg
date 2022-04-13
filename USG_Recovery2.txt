@@ -1,0 +1,132 @@
+You need to boot up your machine with something that can read NTFS. Here are some options:
+
+Boot with any Windows installation media (the newer the version, the more likely it is that it has drivers for your hard disk)
+Linux with NTFS driver
+Windows PE (preinstallation environment)
+
+In my example, I'm booting it with a standard Windows 10 installation DVD (actually an ISO of it, as this is a Hyper-V VM).
+
+![image](https://user-images.githubusercontent.com/24641464/162371644-e43951a1-7211-4f7a-ba97-bbd47571fc28.png)
+
+
+The computer booted up with a Windows installation DVD
+
+After booting, there are two options I recommend:
+
+If your computer doesn't have BitLocker, just hit Shift+F10 to get to a command prompt.
+If your computer has BitLocker, start the Setup and choose Repair, as it will ask you for the BitLocker recovery key and then let you head on to a command prompt.
+
+This computer doesn't have BitLocker, so I just hit Shift+F10 to get the prompt. After this, I’ll find the Windows installation that I can't access. In this case, it’s the D: drive.
+
+![image](https://user-images.githubusercontent.com/24641464/162371656-858b9029-3cd9-4cd7-a8f3-175f10fd6ae7.png)
+
+
+Starting CMD with Shift+F10
+
+Next you need to change the directory to D:\Windows\System32\.
+
+The actual hack is done by the second command, but I recommend doing the first. (I'm showing this not as an attack, but as a procedure you are absolutely allowed to perform since you are the administrator on this PC.)
+
+First, run the following command: copy sethc.exe ..
+
+This command copies the sethc.exe as a backup to the parent folder with the "copy, space, sethc.exe, space, dot notation.
+
+Second, run the following command: copy cmd.exe sethc.exe
+
+This command replaces the Sticky Keys command with a command prompt.
+
+Replacing the sethc.exe with the cmd.exe, after creating a backup
+
+This is what we did for years. But now, Windows Defender will catch this on Windows 10. So what you need to do is get the computer to Safe Mode.
+
+Restart the computer.
+
+![image](https://user-images.githubusercontent.com/24641464/162371785-e4c95566-1e95-4a4d-b408-0ac0a876de85.png)
+
+Restart the machine
+
+On the logon screen, click Restart while pressing the Shift key.
+
+![image](https://user-images.githubusercontent.com/24641464/162371813-a096c2ca-d808-4807-806b-77700480b9b2.png)
+
+
+Getting the computer to Safe Mode by using Shift+Restart
+
+Select Troubleshoot > Advanced Options > Startup Settings.
+Select Restart.
+
+![image](https://user-images.githubusercontent.com/24641464/162371830-5967f636-0352-403a-ba86-57fc77015f10.png)
+
+
+Select Restart to get to the F8 menu of Windows 10
+
+Choose the fourth option, Enable Safe Mode.
+
+![image](https://user-images.githubusercontent.com/24641464/162371848-bebf721e-8f51-4f09-b801-06d94d90c45b.png)
+
+
+Choosing Safe Mode to avoid Windows Defender
+
+When you are on the logon screen, press the Shift key five times rapidly to get a command prompt with system access.
+
+![image](https://user-images.githubusercontent.com/24641464/162371878-5445c3e5-a210-4a47-9874-d1fcdb78c010.png)
+
+
+Command prompt with SYSTEM access
+
+Here, you can reset the user account passwords or create new users. Here are some examples:
+
+NET USER Master Qwerty1
+In my example, I have an account called Master. This will change its password to be Qwerty1.
+NET USER Administrator Qwerty1
+This changes the Administrator user's password to Qwerty1.
+NET USER Administrator /ACTIVE:YES
+This activates a disabled admin account.
+NET USER TEMP Qwerty1 /ADD
+This creates a new user.
+NET LOCALGROUP Administrators TEMP /add
+This makes the new user an admin.
+msc
+Open the Computer Management screen if you don't like my command-line examples.
+
+![image](https://user-images.githubusercontent.com/24641464/162371893-728db90d-c038-4f9f-a660-134b257446a5.png)
+
+
+Changing a user's password
+
+Note: If you create a new user and the computer is part of a workgroup, you might need to boot the computer once more before you can log on with the user as it might not be listed on the logon screen.
+
+Close the CMD and logon. After logon, there is still some cleanup to do because the computer is still "hacked," which you can verify by pressing the Shift key again five times. It still starts a command prompt. Close this command prompt and start a new one from the Start menu, elevating it with the Run as Administrator option.
+
+![image](https://user-images.githubusercontent.com/24641464/162371911-659cbd5b-e099-45ba-a3d1-1bf311c86d9e.png)
+
+
+Running a new CMD with admin rights (not the one that was started by the Shift key)
+
+From this new CMD.exe, type the following command: Robocopy C:\Windows C:\Windows\System32 sethc.exe /B
+
+This uses the backup with your restored privilege.
+A normal copy won't do, as the file is protected by Windows Resource Protection.
+
+![image](https://user-images.githubusercontent.com/24641464/162371923-e40acbdd-764c-4fce-8a5c-ad82f72630e9.png)
+
+
+Robocopy restoring the sticky keys to normal
+
+You can verify that everything is back to normal by pressing the Shift key five times. Notice the Sticky Keys notification pops up.
+
+![image](https://user-images.githubusercontent.com/24641464/162371934-7745c166-1e08-4c17-8ab6-81097b92396b.png)
+
+
+StickyKeys is working normally
+
+Now all that is left is to reboot the computer back to normal mode.
+
+A few points to consider:
+
+This is not an attack. If you are worried that this would be used against you as an attack, just make sure you have BitLocker, as it will mitigate this.
+If StickyKeys is disabled via policy, you can try Utilman.exe or DisplaySwitch.exe. If those don't work either, there is a way to hack yourself in via Group Policy; however, that is a story for another post.
+If you can't access Safe Mode, you can also Disable Windows Defender by renaming MsMpEng.exe while in Windows PE.
+
+
+Source: https://4sysops.com/archives/reset-windows-10-password-by-disabling-windows-defender/
