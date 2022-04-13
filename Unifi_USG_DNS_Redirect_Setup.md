@@ -30,24 +30,24 @@ Now you need your 'interfaces' - meaning all your vlans and such.
 
 The way to find out your interfaces is ssh into the gateway and issue: show interfaces Output is:
 
-Codes: S - State, L - Link, u - Up, D - Down, A - Admin Down
-InterfaceIP AddressS/L  Description 
+	Codes: S - State, L - Link, u - Up, D - Down, A - Admin Down
+	InterfaceIP AddressS/L  Description 
 ----------------------  ----------- 
-eth0 XX.X.XXX.XXX/24   u/u  WAN 
-eth1 192.168.1.1/24   u/u  LAN 
-eth1.2   192.168.2.1/24   u/u  
-eth1.80  192.168.80.1/24  u/u  
-eth1.90  192.168.90.1/24  u/u  
-eth1.107 192.168.107.1/24 u/u  
-eth2 - A/D  
-eth3 - A/D  
-eth4 - A/D  
-eth5 - u/D  
-eth6 - u/D  
-eth7 - u/D  
-eth8 - u/D  
-lo   127.0.0.1/8   u/u  
- ::1/128  
+	eth0 XX.X.XXX.XXX/24   u/u  WAN 
+	eth1 192.168.1.1/24   u/u  LAN 
+	eth1.2   192.168.2.1/24   u/u  
+	eth1.80  192.168.80.1/24  u/u  
+	eth1.90  192.168.90.1/24  u/u  
+	eth1.107 192.168.107.1/24 u/u  
+	eth2 - A/D  
+	eth3 - A/D  
+	eth4 - A/D  
+	eth5 - u/D  
+	eth6 - u/D  
+	eth7 - u/D  
+	eth8 - u/D  
+	lo   127.0.0.1/8   u/u  
+	::1/128  
 
 Note down all the eth1, eth1.2, - eth1.100 for each active VLAN you care about doing this too (all?)
 
