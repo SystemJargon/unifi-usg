@@ -1,9 +1,12 @@
 # Recovery of USG after bad config
 
-	Pin hole reset the USG. (Power on, leave it powered 1min. Pin hole hold in for approx 10 seconds).
-	Connect your PC or Mac with static IP set on the adapter of it.
-	Ensure any switch you connect physically to is tagged to MGT VLAN or has an "ALL" switch port profile used on the port to your pc/mac.
-	After factory reset completes you can move onto the set inform steps below.
+Pin hole reset the USG. (Power on, leave it powered 1min. Pin hole hold in for approx 10 seconds).
+
+Connect your PC or Mac with static IP set on the adapter of it.
+
+Ensure any switch you connect physically to is tagged to MGT VLAN or has an "ALL" switch port profile used on the port to your pc/mac.
+
+After factory reset completes you can move onto the set inform steps below.
 
 
 ## Web Browser Method
