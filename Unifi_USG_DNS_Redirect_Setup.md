@@ -54,6 +54,54 @@ Note down all the eth1, eth1.2, - eth1.100 for each active VLAN you care about d
 
 Either open up your config.json on the CloudKey or learn how to edit/make one here: https://help.ubnt.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration
 
+--------------
+
+
+%DNS_SERVER%, replace with your DNS server's IP address not including % symbol
+
+%IOT_VLAN%, replace with the VLAN you wish to target to have DNS DNAT redirection
+
+Some graphical explaination of this by someone else is available at https://www.missingremote.com/guide/2018/07/unifi-usg-dnat-rule-for-pi-hole-or-other-dns-redirection
+
+```
+
+{
+	"service": {
+		"nat": {
+			"rule": {
+				"1": {
+					"description": "DNS Redirect IoT",
+					"destination": {
+						"port": "53"
+					},
+					"inbound-interface": "%IOT_VLAN%",
+					"inside-address": {
+						"address": "%DNS_SERVER%"
+					},
+					"log": "disable",
+					"protocol": "tcp_udp",
+					"source": {
+						"address": "!%DNS_SERVER%"
+					},
+					"type": "destination"
+				},
+				"5501": {
+					"description": "Translate IoT DNS to Internal",
+					"destination": {
+						"address": "%DNS_SERVER%",
+						"port": "53"
+					},
+					"log": "disable",
+					"outbound-interface": "%IOT_VLAN%",
+					"protocol": "tcp_udp",
+					"type": "masquerade"
+				}
+			}
+		}
+	}
+}
+```
+
 # BROKEN DO NOT USE BELOW
 
 ## Need to find why this has fatal errors on the USG.
