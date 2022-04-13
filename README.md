@@ -4,4 +4,5 @@ Redirect DNS to PiHole with a USG https://community.ui.com/questions/Redirect-DN
 
 
 File on a UCK (Unifi Cloud Key) v1:
+
 	cat /srv/unifi/data/sites/default/config.gateway.json
