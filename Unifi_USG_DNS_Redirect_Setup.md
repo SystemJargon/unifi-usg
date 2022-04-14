@@ -39,7 +39,7 @@ The way to find out your interfaces is ssh into the gateway and issue: show inte
 	eth1.2   192.168.2.1/24   u/u  
 	eth1.80  192.168.80.1/24  u/u  
 	eth1.90  192.168.90.1/24  u/u  
-	eth1.107 192.168.107.1/24 u/u  
+	eth1.100 192.168.100.1/24 u/u  
 	eth2 - A/D  
 	eth3 - A/D  
 	eth4 - A/D  
