@@ -1,10 +1,12 @@
 # Unifi
 
-All things relating to Unifi gear by Ubiquiti.
+Things relating to Unifi gear by Ubiquiti.
 
 
 ----
-# config.gateway.json locations
+# config.gateway.json 
+
+## File Location
 
 config.gateway.json file on a UCK (Unifi Cloud Key) v1:
 
@@ -14,7 +16,10 @@ Other Versions of CloudKey/UDM, config.gateway.json may exist then in this locat
 
 ```/usr/lib/unifi/data/sites/default/config.gateway.json```
 	
-	
+## Dump Contents of file
+mca-ctrl -t dump-cfg > config.json
+
+----
 
 # Some further reading / links
 
@@ -22,7 +27,7 @@ Other Versions of CloudKey/UDM, config.gateway.json may exist then in this locat
 
 [Unifi Community Site](https://community.ui.com/)
 
-[Hostifi](https://www.hostifi.com/) *I am not sponsored, employed or paid by Hostifi, but it is a hosted solution worth noting]
+[Hostifi](https://www.hostifi.com/) *I am not sponsored or paid by Hostifi, but it is a hosted solution worth a look.
 
 https://help.ui.com/hc/en-us/articles/215458888-UniFi-USG-Advanced-Configuration-Using-config-gateway-json
 
