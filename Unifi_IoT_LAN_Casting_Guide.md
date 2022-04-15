@@ -4,9 +4,12 @@ In this example this is the mock up of the network.
 
 ```
 Default: VLAN_ID = 1, 192.168.1.1/24
-LAN: VLAN_ID = 50, 192.168.50.1/24
-Media: VLAN_ID = 100, 192.168.100.1/24
+LAN-Network: VLAN_ID = 50, 192.168.50.1/24
+Media-Network: VLAN_ID = 100, 192.168.100.1/24
 ```
+
+Some people call their Media-Network an IoT-Network in other guides. 
+*Most people think a media player is IoT, a ESP8266 or sensor is REAL IoT (excuse my OCD).
 
 The trick is allow mDNS by interface in the json file AND
 
@@ -21,7 +24,9 @@ The same goes "Multicast and Broadcast Filtering" (under each Wireless network),
 
 # Steps
 
-1) Turn on mDNS.
+1) Login to your Unifi Controller
+
+2) Turn on mDNS.
 
 Settings > Services > mDNS
 
@@ -42,13 +47,13 @@ Settings > Services > mDNS
 }
 ```
 
-2) Create Firewall Rules
+3) Create Firewall Rules
 
 Settings > Routing and Firewall > Firewall
 
 LAN_IN
 
-Create some new rules, first new rule
+Create some new rules, first new rule of two.
 
 ```
 Name: Multicast IP for Media Casting
