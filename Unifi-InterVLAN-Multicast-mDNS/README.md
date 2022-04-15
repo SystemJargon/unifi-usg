@@ -10,7 +10,7 @@ Media-Network: VLAN_ID = 100, 192.168.100.1/24
 ```
 
 ----
-The trick is allow mDNS by interface in the json file AND
+The trick is allow mDNS by interface AND
 
 Have your Media-Network when configured as "Purpose" set to Corporate, not Guest.
 
