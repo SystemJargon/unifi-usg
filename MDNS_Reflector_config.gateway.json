@@ -3,8 +3,8 @@
     "mdns": {
       "repeater": {
         "interface": [
-          "eth1.10",
-          "eth1.20"
+          "eth1.50",
+          "eth1.100"
         ]
       }
     }
