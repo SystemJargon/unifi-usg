@@ -1,3 +1,7 @@
+This topic has been talked about a lot of places, an example being
+ https://community.ui.com/questions/Redirect-DNS-to-Pi-hole-using-a-USG/b6c330d0-7ea4-42ad-b190-f4f9792367b7
+
+
 Log into unifi controller web UI
 
 Go to Settings
