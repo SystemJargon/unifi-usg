@@ -8,10 +8,6 @@ LAN-Network: VLAN_ID = 50, 192.168.50.1/24
 Media-Network: VLAN_ID = 100, 192.168.100.1/24
 ```
 
-Some people call their Media-Network an IoT-Network in other guides. 
-
-**Most people think a media player is IoT, an ESP8266 node connected via WiFi or a sensor is REAL IoT (excuse my OCD).
-
 The trick is allow mDNS by interface in the json file AND
 
 Have your Media-Network when configured as "Purpose" set to Corporate, not Guest.
