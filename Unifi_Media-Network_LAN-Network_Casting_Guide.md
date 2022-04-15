@@ -13,7 +13,7 @@ The trick is allow mDNS by interface in the json file AND
 
 Have your Media-Network when configured as "Purpose" set to Corporate, not Guest.
 
-[https://github.com/lwsnz/unifi/raw/main/Unifi_Media-Network_LAN-Network_Casting_Guide_1.png]
+(https://github.com/lwsnz/unifi/raw/main/Unifi_Media-Network_LAN-Network_Casting_Guide_1.png)
 
 
 Depending on other factors, "IGMP Snooping" (Under each Network), may need to be toggled On/Off.
