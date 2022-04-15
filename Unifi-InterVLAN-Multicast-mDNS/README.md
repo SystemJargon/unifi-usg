@@ -14,7 +14,10 @@ The trick is allow mDNS by interface AND
 
 Have your Media-Network when configured as "Purpose" set to Corporate, not Guest.
 
-![Example_Media_Network_Setup](/Unifi-InterVLAN-Multicast-mDNS/network_example_1.png?raw=true "Example_Media_Network_Setup")
+![image](https://user-images.githubusercontent.com/24641464/163526824-d5259fb7-ea9d-4e6f-b878-4f1a9bce3e3b.png)
+
+
+
 
 
 Depending on other factors, "IGMP Snooping" (Under each Network), may need to be toggled On/Off.
