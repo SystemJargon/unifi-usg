@@ -32,8 +32,9 @@ Older versions of Unifi Controller, this can be enabled by
 Settings > Services > mDNS:
 
 
-![image](https://user-images.githubusercontent.com/24641464/163526824-d5259fb7-ea9d-4e6f-b878-4f1a9bce3e3b.png)
+<!-- ![image](https://user-images.githubusercontent.com/24641464/163526824-d5259fb7-ea9d-4e6f-b878-4f1a9bce3e3b.png) -->
 
+![image](https://user-images.githubusercontent.com/24641464/164584867-29d8854e-9e5c-43c1-bb07-e7ae60072d54.png)
 
 
 
