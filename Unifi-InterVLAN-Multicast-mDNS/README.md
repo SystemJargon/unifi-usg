@@ -10,6 +10,14 @@ Media-Network: VLAN_ID = 100, 192.168.100.1/24
 ```
 
 ----
+## Newer Versions of Unifi
+
+https://raw.githubusercontent.com/lwsnz/unifi/main/Unifi-InterVLAN-Multicast-mDNS/UPDATE_Multicast_DNS_per_Network.png
+
+----
+
+## Older Versions of Unifi:
+
 The trick is allow mDNS by interface AND
 
 Have your Media-Network when configured as "Purpose" set to Corporate, not Guest.
