@@ -1,14 +1,17 @@
 # Unifi Video
 
-Mostly now dead because of Unifi Protect.
-It still works but now EoL. No official support by Ubiquiti.
+Mostly now dead because of Unifi Protect and their future products/services. It still works but now EoL. No official support by Ubiquiti.
 
 ----
 
+## Final releases of Unifi Video (Debian) and Camera Firmware.
+
+
 Unifi Video for Debian / Ubuntu: v3.10.13 
     
-Release notes: https://community.ui.com/releases/UniFi-Video-3-10-13/7cca7ae9-f4ff-4844-a7c4-b8163bb81f21
-Firmware Download: https://dl.ubnt.com/firmwares/ufv/v3.10.13/unifi-video.Ubuntu18.04_amd64.v3.10.13.deb
+[Release notes](https://community.ui.com/releases/UniFi-Video-3-10-13/7cca7ae9-f4ff-4844-a7c4-b8163bb81f21)
+
+[Firmware Download](https://dl.ubnt.com/firmwares/ufv/v3.10.13/unifi-video.Ubuntu18.04_amd64.v3.10.13.deb)
 
 ----
 
@@ -20,7 +23,7 @@ Firmware Download [here](https://github.com/lwsnz/unifi/raw/main/unifi-video/cam
 ----
 
 
-# Install Unifi Video on Debian/Ubuntu
+## Install Unifi Video on Debian/Ubuntu
 
 Source guide below and original [here](https://gist.github.com/pdrok/0b8f65032892b4e5fdb7c85b8d72cdd6#file-unifi-video-ubuntu-18-04-md)
 
