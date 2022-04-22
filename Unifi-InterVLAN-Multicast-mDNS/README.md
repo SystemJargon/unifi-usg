@@ -95,6 +95,8 @@ NETWORK: Media-Network
 NETWORK: LAN-Network
 ```
 
+[More about Firewall and rules can be found here](https://github.com/lwsnz/unifi/tree/main/firewall)
+
 ----
 
 Note, If you have additional custom rules, you may need to sort these new firewall LAN_IN rules in a specific order.
