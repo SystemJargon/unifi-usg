@@ -1,13 +1,22 @@
-# THIS IS BROKEN 
+# DEV
+
+## THIS IS BROKEN 
 
 -----
 
+Notes:
 
-DO NOT USE THIS CODE - FEEL FREE TO FIX IN FORK / PULL AND USE AT YOUR OWN DISCRETION.
+* Large IP list won't load, it isn't like a proper NIX router with ipset method.
+* If using a < 10 list of IP as an example, the method still seems to brick a unit in most (if not all) cases.
+* address-group doh-group-iplist, not to use a name as 'random 25 character alphanumeric group' will apply.
 
-To test in stable or RC by Ubiquiti.
+
+To test in stable or next RC by Ubiquiti.
+
 
 ---------
+
+## DRAFT
 
 # Unifi How-to block Public DNS (DoH) - DNS over HTTPS
 
