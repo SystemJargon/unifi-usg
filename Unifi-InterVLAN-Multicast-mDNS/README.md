@@ -9,48 +9,33 @@ LAN-Network: VLAN_ID = 50, 192.168.50.1/24
 Media-Network: VLAN_ID = 100, 192.168.100.1/24
 ```
 
-----
-## Newer Versions of Unifi
 
-![image](https://user-images.githubusercontent.com/24641464/164584280-7eb6277f-1e58-40a3-b102-f3c5f312bac2.png)
-
-
-----
-
-## Older Versions of Unifi:
-
-The trick is allow mDNS by interface AND
-
-Have your Media-Network when configured as "Purpose" set to Corporate, not Guest.
-
-![image](https://user-images.githubusercontent.com/24641464/163526824-d5259fb7-ea9d-4e6f-b878-4f1a9bce3e3b.png)
-
-
-
-
-
-Depending on other factors, "IGMP Snooping" (Under each Network), may need to be toggled On/Off.
-
-The same goes "Multicast and Broadcast Filtering" (under each Wireless network), may need to be toggled On/Off.
-
-----
 
 # Steps
 
 
 1) Login to your Unifi Controller
 
-
-
 2) Turn on mDNS. 
 
-*In more recent Unifi Controller versions, mDNS in selected in 
+Newer Unifi Controller versions, mDNS in selected in 
  
 Settings > Networks.
 
-* In older versions of Unifi Controller, this can be enabled by
+![image](https://user-images.githubusercontent.com/24641464/164584280-7eb6277f-1e58-40a3-b102-f3c5f312bac2.png)
 
-Settings > Services > mDNS
+
+----
+
+Older versions of Unifi Controller, this can be enabled by
+
+Settings > Services > mDNS:
+
+
+![image](https://user-images.githubusercontent.com/24641464/163526824-d5259fb7-ea9d-4e6f-b878-4f1a9bce3e3b.png)
+
+
+
 
 *If this doesn't appear or you wish to use config.gateway.json try this code below on your CloudKey
 
@@ -69,7 +54,12 @@ Settings > Services > mDNS
 }
 ```
 
+Depending on other factors, "IGMP Snooping" (Under each Network), may need to be toggled On/Off.
+
+The same goes "Multicast and Broadcast Filtering" (under each Wireless network), may need to be toggled On/Off.
+
 ----
+
 
 3) Create Firewall Rules
 
@@ -103,4 +93,4 @@ Note, you may need to sort these new firewall LAN_IN rules in a specific order, 
 
 This would be say if you have other services that the Media-Network needs to talk to your LAN-Network, for specific traffic first before DROP.
 
-i.e. custom server with DNS, FTP, NAS, <insert-media-server-name-here> or likewise.
+i.e. custom server with DNS, FTP, NAS, <insert-media-server-name-here> or likewise. Place the multicast example rule at the most top of the rule chain / order of rules.
