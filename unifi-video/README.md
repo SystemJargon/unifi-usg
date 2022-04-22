@@ -1,7 +1,7 @@
 # Unifi Video
 
 Mostly now dead because of Unifi Protect.
-It still works but no EoL support by Ubiquiti.
+It still works but now EoL. No official support by Ubiquiti.
 
 ## Debian Versions
 
