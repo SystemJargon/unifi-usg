@@ -3,11 +3,18 @@
 Mostly now dead because of Unifi Protect.
 It still works but now EoL. No official support by Ubiquiti.
 
-## Debian Versions
+----
 
-    Unifi Video for Debian / Ubuntu: v3.10.13 
-    Unifi Video Camera Firmware: v4.23.8 (G3 series example).
+Unifi Video for Debian / Ubuntu: v3.10.13 
     
+Release notes: https://community.ui.com/releases/UniFi-Video-3-10-13/7cca7ae9-f4ff-4844-a7c4-b8163bb81f21
+Firmware Download: https://dl.ubnt.com/firmwares/ufv/v3.10.13/unifi-video.Ubuntu18.04_amd64.v3.10.13.deb
+
+----
+
+Unifi Video Camera Firmware: v4.23.8.67 (do not use v4.30 it won't work).
+ 
+
 ----
 
 
