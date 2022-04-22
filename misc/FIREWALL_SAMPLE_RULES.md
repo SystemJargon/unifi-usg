@@ -11,7 +11,7 @@ MOST FAQ: Make chromecast things work on a VLAN to cast / mDNS / Airplay etc.
 
 Refer to:
 
-[/lwsnz/unifi/tree/main/Unifi-InterVLAN-Multicast-mDNS](Multicast DNS)
+[https://github.com/lwsnz/unifi/tree/main/Unifi-InterVLAN-Multicast-mDNS](Multicast DNS)
 
 
 ----
