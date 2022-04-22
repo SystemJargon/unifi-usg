@@ -14,6 +14,8 @@ Firmware Download: https://dl.ubnt.com/firmwares/ufv/v3.10.13/unifi-video.Ubuntu
 
 Unifi Video Camera Firmware: v4.23.8.67 (do not use v4.30 it won't work).
  
+Firmware Download [here](https://github.com/lwsnz/unifi/raw/main/unifi-video/camera_firmware/G3_Flex/uvc.s2l.v4.23.8.bin)
+
 
 ----
 
