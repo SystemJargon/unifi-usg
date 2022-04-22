@@ -12,7 +12,8 @@ Media-Network: VLAN_ID = 100, 192.168.100.1/24
 ----
 ## Newer Versions of Unifi
 
-https://raw.githubusercontent.com/lwsnz/unifi/main/Unifi-InterVLAN-Multicast-mDNS/UPDATE_Multicast_DNS_per_Network.png
+![image](https://user-images.githubusercontent.com/24641464/164584280-7eb6277f-1e58-40a3-b102-f3c5f312bac2.png)
+
 
 ----
 
