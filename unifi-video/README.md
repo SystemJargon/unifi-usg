@@ -46,7 +46,7 @@ Install unifi-video
 Restart your computer to restart the Unifi-Video service. It should now run.
 
 open the follow url on a browser tab :
-`https://localhost:7443` or `https://server:7443'
+`https://localhost:7443` or `https://server:7443`
 
 [Source](https://www.reddit.com/r/Ubiquiti/comments/l30jm5/unifi_video_31013_not_compatible_with_openjdk_180/)
 
