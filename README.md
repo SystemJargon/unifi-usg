@@ -1,6 +1,6 @@
 # Unifi
 
-Things relating to Unifi gear by Ubiquiti.
+Things relating to Unifi networking equipment, may also include other products and services by Ubiquiti.
 
 
 ----
