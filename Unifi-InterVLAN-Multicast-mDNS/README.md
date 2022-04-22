@@ -11,9 +11,11 @@ In this example this is the mock up of the network.
 
 ----
 
-The trick is allow mDNS by interface AND
+The trick is allow mDNS by interface.
 
 Have your Media-Network when configured as "Purpose" set to Corporate, not Guest.
+
+** This often fails above when people set their main LAN to Corporate, but their media/cast/IoT etc. network to Guest and also forget to enable mDNS on that interface/s.
 
 ![image](https://user-images.githubusercontent.com/24641464/163526824-d5259fb7-ea9d-4e6f-b878-4f1a9bce3e3b.png)
 
@@ -38,9 +40,15 @@ In more recent Unifi Controller versions, mDNS in selected in
  
 Settings > Networks.
 
+![image](https://user-images.githubusercontent.com/24641464/164644501-c5ca83a0-915a-45b1-9960-1070e756cde7.png)
+
+
 * In older versions of Unifi Controller, this can be enabled by
 
 Settings > Services > mDNS
+
+![image](https://user-images.githubusercontent.com/24641464/164644527-09adee0a-67fc-409d-a397-d7adb4c8fb33.png)
+
 
 *If this doesn't appear or you wish to use config.gateway.json try this code below on your CloudKey
 
@@ -89,9 +97,11 @@ NETWORK: LAN-Network
 
 ----
 
-Note, you may need to sort these new firewall LAN_IN rules in a specific order, if you have additional custom rules.
+Note, If you have additional custom rules, you may need to sort these new firewall LAN_IN rules in a specific order.
 
-This would be say if you have other services that the Media-Network needs to talk to your LAN-Network, for specific traffic first before DROP.
+Firewall rules get process by ordered number and subsequently from 2000 onwards (if before predefined rules is set).
+
+This would be say if you have other services that the Media-Network needs to talk to your LAN-Network, for specific traffic first before any DROP.
 
 i.e. custom server with DNS, FTP, NAS, <insert-media-server-name-here> or likewise.
 
