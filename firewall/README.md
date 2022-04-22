@@ -6,6 +6,7 @@ This is more a reference, on how to ACCEPT / DROP something specific per rule if
 Opinion: PfSense / Netgate offer better routing and firewall features.
 
 More info about firewall rules for Unifi [here](https://help.ui.com/hc/en-us/articles/115003173168-UniFi-UDM-USG-Introduction-to-Firewall-Rules)
+
 ----
 
 ## MOST FAQ: ##
@@ -13,6 +14,7 @@ More info about firewall rules for Unifi [here](https://help.ui.com/hc/en-us/art
 Make things work on a VLAN to cast phone > screen / mDNS / chromcast / Airplay etc.
 
 Refer to: [Multicast DNS](https://github.com/lwsnz/unifi/tree/main/Unifi-InterVLAN-Multicast-mDNS)
+
 
 ----
 
