@@ -1,11 +1,12 @@
-# FIREWALL SAMPLE RULES
+# FIREWALL 
 
-Disclaimer: Sample rules, by no means run just these sample rules. 
-This is more a reference, on how to ACCEPT / DROP something specific per rule if you use Unifi for routing.
+Disclaimer: Any sample rules provided, are by no means a complete list. Any such rules are more a reference, on how to ACCEPT / DROP something specific per rule if you use Unifi for routing and firewall.
 
 Opinion: PfSense / Netgate offer better routing and firewall features.
 
 More info about firewall rules for Unifi [here](https://help.ui.com/hc/en-us/articles/115003173168-UniFi-UDM-USG-Introduction-to-Firewall-Rules)
+
+Good video on Unifi USG and UDM Firewalls (2020) [here](https://www.youtube.com/watch?v=vEQkCow7wdU)
 
 ** If you have a console server / console port on your device, I'd recommend you make changes to the firewall via that interface, not direct via eth0, eth1 etc.
 
