@@ -1,11 +1,13 @@
 # FIREWALL SAMPLE RULES
 
-Sample rules, by no means run just these sample rules. 
+Disclaimer: Sample rules, by no means run just these sample rules. 
 This is more a reference, on how to ACCEPT / DROP something specific per rule if you use Unifi for routing.
 
 Opinion: PfSense / Netgate offer better routing and firewall features.
 
 More info about firewall rules for Unifi [here](https://help.ui.com/hc/en-us/articles/115003173168-UniFi-UDM-USG-Introduction-to-Firewall-Rules)
+
+** If you have a console server / console port on your device, I'd recommend you make changes to the firewall via that interface, not direct via eth0, eth1 etc.
 
 ----
 
@@ -37,7 +39,7 @@ Source Groups: NET_LAN_Subnets
 Destination Groups:: RFC1918
 ```
 
-** for reference RFC1918 has the follow IP addresses:
+** for reference RFC1918 has the following IP addresses:
 ```
 10.0.0.0/8
 172.16.0.0/12
