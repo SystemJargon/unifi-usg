@@ -7,11 +7,11 @@ Opinion: PfSense / Netgate offer better routing and firewall features.
 
 ----
 
-MOST FAQ: Make chromecast things work on a VLAN to cast / mDNS / Airplay etc.
+## MOST FAQ: ##
 
-Refer to:
+Make things work on a VLAN to cast phone > screen / mDNS / chromcast / Airplay etc.
 
-[Multicast DNS](https://github.com/lwsnz/unifi/tree/main/Unifi-InterVLAN-Multicast-mDNS)
+Refer to: [Multicast DNS](https://github.com/lwsnz/unifi/tree/main/Unifi-InterVLAN-Multicast-mDNS)
 
 ----
 
