@@ -39,7 +39,7 @@ Also noted is that the address-group when added via CLI, does NOT show in the GU
 
 Further, as has always been the case, if you ssh on the UDM/USG (config mode) issue; 
 
-	```show firewall group address-group```
+```show firewall group address-group```
 	
 You'll notice the naming convention of ONLY random 25 character alphanumeric groups and the built in default types. 
 
@@ -64,10 +64,14 @@ Download  https://public-dns.info/nameservers-all.txt
 
 
 ## Make a copy of the file.
-	So we can leave the original downloaded copy as a backup for later if needed.
-	Rename the copy of the file you made, rename it to doh-group-iplist.txt
-	You should have two files now, the original and the copy.
-	We will now be working only with this copied file doh-group-iplist.txt in further steps.
+
+So we can leave the original downloaded copy as a backup for later if needed.
+
+Rename the copy of the file you made, rename it to doh-group-iplist.txt
+
+You should have two files now, the original and the copy.
+
+We will now be working only with this copied file doh-group-iplist.txt in further steps.
 
 ## Removing IPv6 addresses (optional).
 Open the copied doh-group-iplist.txt file In notepad++ we will remove the IPv6 addresses.
