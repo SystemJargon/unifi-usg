@@ -6,5 +6,7 @@ Notes:
 * address-group doh-group-iplist, not to use a name as 'random 25 character alphanumeric group' will apply.
 * BSD can support this, not Unifi in this method from initial testing.
 
-----
+
 Disclaimer: I AM NOT LIABLE FOR ANYTHING SUCH AS BUT NOT LIMITED TO MISUSE OR DAMAGE OR CONSEQUENTIAL LOSSES TO YOUR EQUIPMENT
+
+----
