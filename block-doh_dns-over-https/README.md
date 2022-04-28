@@ -1,8 +1,3 @@
-# DEV
-
-## THIS IS BROKEN 
-
------
 
 Notes:
 
