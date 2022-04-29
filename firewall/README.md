@@ -66,6 +66,18 @@ Destination Groups:: IP_Unifi_MGMT
 
 ----
 
+## WAN_OUT
+
+```
+Name: Drop external SSH - prevent employees tunneling and bypass SEC
+Action: DROP
+Protocol: TCP
+Source Groups: RFC1918 
+Destination Groups:: any | Port Group: SSH (TCP 22)
+```
+
+----
+
 ** Groups are following a starting naming convention of:
 ```
 IP_ = IP address group
