@@ -68,13 +68,29 @@ Destination Groups:: IP_Unifi_MGMT
 
 ## WAN_OUT
 
+This first rule is when we have a customer we support and NO VPN is possible nor other secure means.
+
+We must SSH to their device over WAN. This is an exception list "IP_ExternalCustomers_WAN_SSH_OUT". Drop any others in next rule.
+
 ```
-Name: Drop external SSH - prevent employees tunneling and bypass SEC
+Name: Permit external SSH - when no VPN to client
+Action: ACCEPT
+Protocol: TCP
+Source Groups: RFC1918 
+Destination Groups:: IP_ExternalCustomers_WAN_SSH_OUT | Port Group: SSH (TCP 22)
+```
+
+Next rule below, some jargon EXT_SEC_OUT_FING (External Secured Fingerprint, HARDEN YOUR ORG OUT NOT JUST IN). Yes even SME's!
+
+```
+Name: Drop external SSH - EXT_SEC_OUT_FING
 Action: DROP
 Protocol: TCP
 Source Groups: RFC1918 
 Destination Groups:: any | Port Group: SSH (TCP 22)
 ```
+
+
 
 ----
 
