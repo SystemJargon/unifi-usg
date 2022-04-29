@@ -95,7 +95,7 @@ NETWORK: Media-Network
 NETWORK: LAN-Network
 ```
 
-[More about Firewall and rules can be found here](https://github.com/lwsnz/unifi/tree/main/firewall)
+[Firewall, I have some doco on this in Github here](../firewall)
 
 ----
 
