@@ -21,7 +21,7 @@ Did I say, MAKE BACK UPS BEFORE UPGRADING / UPDATING ANY DEVICE !!!
 
 Make things work on a VLAN to cast phone > screen / mDNS / chromcast / Airplay etc.
 
-Refer to: [Multicast DNS](https://github.com/lwsnz/unifi/tree/main/Unifi-InterVLAN-Multicast-mDNS)
+Refer to: [Multicast DNS](/Unifi-InterVLAN-Multicast-mDNS)
 
 
 ----
