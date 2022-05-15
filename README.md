@@ -26,7 +26,7 @@ mca-ctrl -t dump-cfg > config.json
 
 # Some further reading / links
 
-[Any of my UDM & UDR specific content](https://github.com/lz-eng/unifi/tree/main/UDM_UDR)
+[Any of my UDM & UDR specific content](main/UDM_UDR)
 
 [Unifi Releases](https://community.ui.com/releases)
 
