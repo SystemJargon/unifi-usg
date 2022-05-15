@@ -3,6 +3,9 @@
 Things relating to Unifi networking equipment, may also include other products and services by Ubiquiti.
 
 
+* Most of the guides apply to the USG, as config.gateway.json does NOT apply/NOT work with the UDM series gear (UDR possibly too).
+
+
 ----
 # config.gateway.json 
 
@@ -12,7 +15,7 @@ config.gateway.json file on a UCK (Unifi Cloud Key) v1:
 
 ```/srv/unifi/data/sites/default/config.gateway.json```
 
-Other Versions of CloudKey/UDM, config.gateway.json may exist then in this location if not above:
+Other Versions of CloudKey (or EdgeOS), config.gateway.json may exist then in this location if not above:
 
 ```/usr/lib/unifi/data/sites/default/config.gateway.json```
 	
