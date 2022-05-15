@@ -3,7 +3,7 @@
 Things relating to Unifi networking equipment, may also include other products and services by Ubiquiti.
 
 
-* Most of the guides apply to the USG, as config.gateway.json does NOT apply/NOT work with the UDM series gear (UDR possibly too).
+* Most of the guides apply to the USG (Unifi Security Gateway), as config.gateway.json does NOT apply/NOT work with the UDM series gear (UDR possibly too).
 
 
 ----
@@ -25,6 +25,8 @@ mca-ctrl -t dump-cfg > config.json
 ----
 
 # Some further reading / links
+
+[Any of my UDM & UDR specific content](https://github.com/lz-eng/unifi/tree/main/UDM_UDR)
 
 [Unifi Releases](https://community.ui.com/releases)
 
