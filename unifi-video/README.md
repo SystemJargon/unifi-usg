@@ -19,16 +19,16 @@ Unifi Video Camera Firmware: v4.23.8.67
  
 [Firmware Download](https://github.com/lwsnz/unifi/raw/main/unifi-video/camera_firmware/G3_Flex/uvc.s2l.v4.23.8.bin)
 
-Note: do not use v4.30 it won't work with Unifi Video for Debian.
+Note: do not use v4.30 it won't work with Unifi Video for Debian. v4.30 is for Unifi Protect.
 
 ----
 
 
-## Install Unifi Video on Debian/Ubuntu
+# Install Unifi Video on Debian/Ubuntu
 
-Source guide below and original [here](https://gist.github.com/pdrok/0b8f65032892b4e5fdb7c85b8d72cdd6#file-unifi-video-ubuntu-18-04-md)
 
-## Steps
+
+## Pre-requisite steps
 
 log in as root: `sudo su`
 if you don't have MongoDB already installed: 
@@ -56,6 +56,8 @@ Now type this command in terminal
 
 `sudo chmod +x mongod`
 
+---- 
+
 ## Download unifi video:
 
 `wget https://dl.ubnt.com/firmwares/ufv/v3.10.13/unifi-video.Ubuntu18.04_amd64.v3.10.13.deb`
@@ -74,3 +76,14 @@ open the follow url on a browser tab :
 [Source_2](https://community.ui.com/questions/unifi-video-wont-start-anymore-FIX-INSIDE/297dbfc0-7e04-4a50-92b8-dab4acf50a03#answer/0ff74ac7-e7db-4e7c-a64c-ee6ceaf9afde)
 
 [Source_3](https://community.ui.com/questions/How-to-install-Unifi-Video-on-Ubuntu-18-04-Now-Supported/6dbb2c6b-af93-4150-9659-4fa0a72ca847)
+
+---- 
+
+## Debian Unifi-Video working directory (post-install)
+
+/var/lib/unifi-video/
+
+----
+
+[Original source guide](https://gist.github.com/pdrok/0b8f65032892b4e5fdb7c85b8d72cdd6#file-unifi-video-ubuntu-18-04-md) (I've added some extras here) 
+
