@@ -2,11 +2,10 @@
 
 
 ----
-# config.gateway.json 
 
-## File Location
+Custom configuration outside the web UI is mostly done within the file config.gateway.json (re SSH).
 
-config.gateway.json file on a UCK (Unifi Cloud Key) v1:
+The location of config.gateway.json file on a UCK (Unifi Cloud Key) v1:
 
 ```/srv/unifi/data/sites/default/config.gateway.json```
 
