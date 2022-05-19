@@ -1,10 +1,4 @@
-# Unifi
-
-Things relating to Unifi networking equipment, may also include other products and services by Ubiquiti.
-
-
-* Most of the guides apply to the USG (Unifi Security Gateway), as config.gateway.json does NOT apply/NOT work with the UDM series gear (UDR possibly too).
-
+# unifi-usg
 
 
 ----
