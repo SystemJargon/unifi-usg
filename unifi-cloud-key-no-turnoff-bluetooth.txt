@@ -1,0 +1,4 @@
+service bt-proxy status
+service bt-proxy stop
+systemctl disable bt-proxy
+systemctl status bt-proxy
